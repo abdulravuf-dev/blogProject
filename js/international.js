@@ -67,25 +67,31 @@
 //   fetch("https://newsapi.org/v2/top-headlines?country=fr&category=business&apiKey=ad236ef1c81e4cc299a5427352fa90c2")
 //  .then(res => res.json())
 
- let button = document.querySelector('#btn');
+//   let button = document.querySelector('#btn');
  
-  
-//    let para = document.querySelector('#divisions');
  
-   let para = document.querySelector('#demo');
+ 
+//    let para = document.querySelector('#demo');
     
-   let para2 = document.querySelector('#demo2');
-   para.addEventListener('click',getRandomNum())
+// //    let para2 = document.querySelector('#demo2');
+//    button.addEventListener('click',getRandomNum)
 
-  //    .then(data => console.log(data.articles[1].content))
+//   //    .then(data => console.log(data.articles[1].content))
 
-function getRandomNum(e)
-{
-    fetch("https://newsapi.org/v2/top-headlines?country=fr&category=business&apiKey=ad236ef1c81e4cc299a5427352fa90c2")
-    .then(res => res.json())
-    .then(data =>{para.innerHTML = data.articles[1].title    })
- 
- } 
+// function getRandomNum(e)
+// {
+//     fetch("https://newsapi.org/v2/top-headlines?country=fr&category=business&apiKey=ad236ef1c81e4cc299a5427352fa90c2")
+//     .then(res => res.json())
+//     // .then(data => console.log(data))
+    
+//      .then(data =>{para.innerHTML = data.articles[1].url  })
+
+//     // .then(data =>{para.innerHTML = `<img src="${data.articles[1].urlToImage}" </img>`;})
+//     // `<img src="${data.articles[1].urlToImage}
+
+
+    
+//  } 
  
 //  function getRandomNum(e)
 //  {
@@ -94,5 +100,22 @@ function getRandomNum(e)
 //      .then(data =>{para2.innerHTML = data.articles[2].title     })
   
 //   } 
-  
- 
+
+
+
+let button = document.querySelector('#btn');
+   let para = document.querySelector('#demo');
+    
+//    let para2 = document.querySelector('#demo2');
+   button.addEventListener('click',getRandomNum)
+
+  //    .then(data => console.log(data.articles[1].content))
+
+function getRandomNum(e)
+{
+    fetch(" https://content.guardianapis.com/search?api-key=b5c1ccd1-6a2a-4882-985e-054e72abd95e")
+    .then(res => res.json())
+    .then(data =>{para.innerHTML = data.response.results[1].id })
+    // .then(data => console.log(data.results[1].sectionName))
+   //  .then(data => console.log(data))
+ } 
