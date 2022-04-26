@@ -1,0 +1,320 @@
+/* 
+
+img{
+    width: 200px;
+    height: 300px;
+    margin-right: 10px;
+    transition:transform 450ms;
+}
+
+img{
+transform:scale(1.08)
+
+}
+main{
+
+margin-top:20px;
+}
+
+  .imags{
+    width: 100vw;
+    max-height:300px;
+    display:flex;
+    overflow-x: scroll;
+    overflow-y:hidden;
+    background-color: red;
+      }
+    
+      .imags::-webkit-scrollbar{
+display: none;
+
+      } */
+
+
+      api news 
+
+      ad236ef1c81e4cc299a5427352fa90c2
+      
+
+      everyhoong
+
+
+
+
+      @import url(variable.css);
+
+
+*{
+  margin:0;
+  
+  
+  
+  
+  padding:0;
+  box-sizing: border-box  ;
+  }
+  
+    
+.firstNav {
+    display: flex;
+    color: rgb(172, 255, 116);
+   }
+  #logo{
+ color: rgb(108, 231, 170);
+font-size: 20px;
+  }
+header {
+    
+    flex-flow: wrap;
+  }
+  nav {
+      padding: 2px;
+      background-color:var(--primarycolor);
+    flex-flow: wrap;
+  
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100vw;
+  }
+  ul {
+    display: flex;
+  }
+  
+  ul > li {
+    list-style: none;
+    padding: 13px;
+    color: aliceblue; 
+  }
+  
+  .list {
+    flex-flow: wrap;
+  }
+  
+  .list >  li  {
+display: flex;
+    justify-content: center;
+    align-content: center;
+  }
+  
+  .list li:hover {
+    border-radius: 30px;
+    background-color: rgb(10, 150, 10);
+  }
+  ul > li > .new {
+    display: none;
+  }
+
+ 
+   
+.hero{
+  
+  /* padding:20px; */
+  display:flex;
+  align-content: center;
+  justify-content: center;
+  
+ }
+.image1{
+  width:745px; 
+  max-width: 100%;
+  height: auto;
+background-color: #EDE3E5; 
+}
+  .img1 {
+  max-width: 100%;
+  width:745px;  
+}
+
+a{ 
+  color: black;
+  text-decoration: none;
+}
+
+a:hover{
+  text-decoration:underline;
+}
+
+.tags{
+  
+  display: flex ;
+  align-items: center;
+ flex-direction: column;
+ flex-basis: 400px; 
+ }
+ 
+.tags a
+{
+
+padding: 20px;
+  margin-left: 20px;
+     border-bottom: 1px solid rgb(173, 173, 173);
+ 
+    font-weight:700;
+    align-items: center;
+    flex-direction: column; 
+ font-size: larger;   
+ 
+
+   }
+
+
+
+
+
+   .image1 h5 {
+    text-align: center; 
+    color:rgb(133,94,86);
+    padding: 10px;
+  }
+  .image1 h1,h4 {
+    text-align: center;
+    padding: 10px;  
+    color:black
+    
+  }
+  
+  /* section 2 images  */
+  .section2 {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    padding: 4%;  
+    gap: 3%;
+
+    flex-direction: row;
+    
+   
+  }
+    
+  div > h1
+  {
+     color: #9b9b9b;
+  }
+ 
+  
+  div > h1,
+  h3 {
+    width: 130px;
+  }
+ 
+  .section2 > * {
+font-size: 15px;
+text-align: left;
+color:rgb(15, 15, 15) ;
+
+
+  }
+
+
+
+  .section2 > img{
+
+    max-width: 100%;
+    width:200px; 
+  }
+ 
+
+  @media (max-width: 981px) {
+    .section2 {
+      overflow: auto;
+background-color: greenyellow;
+      display: flex;
+      flex-flow:row wrap;
+      align-content: center;
+      justify-content: center ;
+     
+      padding: 0;
+
+       }
+       .section2 > img{
+         width: 300px;
+      height: 200px;
+        }
+
+       .section2 > div{
+        flex:1 1 33.33%;
+        border:3px solid black;
+        min-height: 40.33%;
+
+            }
+  
+ 
+
+  }
+
+   @media (max-width: 768px) {
+
+
+             
+                  .section2 {
+                    overflow: auto;
+
+                    display: flex;
+                    flex-flow:row wrap;
+                    align-content: center;
+                    justify-content: center ;
+                    align-items: center;
+                    background-color: blanchedalmond;
+                     }
+              
+                 .section2 > div{
+          flex:1 1 33%;
+          border:3px solid black;
+          min-height: 33.33%;
+
+              }
+            .section2 > div> img
+              {
+                width:170px;
+                height: 100px;
+              } 
+              
+                  .hero{
+ 
+flex-direction: column;
+
+}
+.tags{
+  align-items: center;
+  padding: 20px;
+}
+
+                  ul > li > .new {
+                    display: flex;
+                    
+                   }
+                  .list {
+                  /* change display flex here */
+                    display: none;
+                    flex-direction: column;
+                   top: 15%;
+                   background-color: rgb(136, 237, 250);
+                        width: 100vw;
+                      height:100vh;
+                      overflow: auto;
+                      align-items: center;
+                        justify-content: space-around;
+                      position: absolute;
+                    }
+                  
+                    nav > ul > li > i {
+                        display: block;
+                      
+                      } 
+                    .firstNav{
+                      
+                font-size: 20px;
+                      justify-content: center;
+                    }
+                
+                
+                    .burger:hover .logo {
+                      display: block;
+                      color: red;
+                      background-color: aqua;
+                  } 
+                
+                
+                }
+                

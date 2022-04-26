@@ -1,0 +1,164 @@
+ 
+
+  @media (max-width: 1120px){
+
+    ul > li {
+      list-style: none;
+    }
+    .list {
+      display: none; 
+    } 
+
+      .section2 >div {
+     
+            min-width: 35.33%; 
+            
+      }  
+  
+    .hero
+  {
+padding:20px;
+  }   
+
+
+
+
+  .mobile
+  {
+
+    margin:54px 347px 0px 0px ;
+    padding-left: 37vw;
+  }
+  .section3
+  {
+    
+  /* display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+
+ 
+ height: auto; 
+    margin: auto;
+   gap:20px;
+   padding: 20px;
+justify-content: flex-start;
+/* width: 720px;   */
+display: flex;
+flex-direction: row;
+flex-wrap: nowrap;
+height: auto;
+/* margin: auto; */
+ 
+padding: 44px;
+justify-content: center;
+/* width: 720px; */
+align-content: center;
+width: 20vh;
+  margin: auto;
+} 
+    .section3 div {
+      
+      }
+ 
+
+     
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .secondTab
+
+    {
+      display: flex;
+      flex-direction: column;
+      padding: 20px;
+      justify-content: center;
+      align-content: space-around;
+      flex-wrap: wrap;
+    }
+
+    .secondTab h3 {
+ 
+      display: none;
+    }
+    .secondTab div{
+      width: 700px;
+      height: 225px;
+      flex-direction: row;
+      gap: 3%;
+
+   
+    } 
+/* 
+    .section3
+    {
+      display: flex;
+      flex-direction: row;
+   
+       width: 25%;  
+         background-color: rgb(147, 0, 0);   
+        justify-content: center;
+        margin: auto;
+        justify-content: center;
+        align-content: center;
+      
+      }
+
+      .section3 div {
+        
+        display:flex;
+  padding: 10px;
+      }
+ */
+
+  /* footer starts here */
+
+
+  #logo1 img
+  {
+    height: 18px;
+    color: red;
+    width: 97%;
+    margin-top: 26px;
+}
+.foot {
+   
+  gap: 21px;
+
+}
+
+
+  .menu
+  {
+    width: 100vw;
+  
+     background-color: var(--primarycolor);
+  }
+  
+
+
+  }
