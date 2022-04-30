@@ -4,6 +4,22 @@
 
 
  @media (max-width: 768px) {
+  .login
+  {
+  
+    font-size:17px;
+    color:var(--main);
+    padding-left: 20px;
+
+    
+  }
+  
+    
+#logo img
+{
+  height: 22px;
+  width: 100%;
+}
               
   .hero{
 
@@ -15,7 +31,9 @@
     padding: 20px;
     }
     .fa-bars {
-    font-size: 30px;
+       height: 22px;
+  width: 100%;
+    font-size: 25px;
       color: var(--secondary);
     }
     .menu  {
@@ -93,54 +111,54 @@
     }
   
   
+  /* secondTab starts here */
+  /* .secondTab {
 
+    margin-right: 2px;
+   }
+  */
+  .secondTab
 
+  {
+ display: flex;
+justify-content: flex-start;
+/* align-content: cen er; */
+gap: 2%;
+ 
+padding: 20px;
 
+  }
+  .secondTab > div > h1{
+    
+    font-size: 16px;
+    }
+    
+    .secondTab > div > h3{
+     font-weight: 400;
+     width: 214px;
+     font-size: 16px;
+         
+    }
+        
+  .secondTab div{
+display: flex;
+padding: 20px;
+flex-direction: row;
+ width: auto;
+gap: 3%;
+justify-content: center;
+align-content: center;
 
+height: 162px;
+    padding: 10px;
+    overflow-y:visible ;
+   }
+   .secondTab div{
+    height: 190px;
+   }
 
-
-
-
-
-
-
-
-
-
-
-
-.secondTab
-{
-  flex-direction: column;
-  flex-wrap: wrap;
-}
-
-.secondTab div{
-  flex-direction: row;
 
  
-
-} 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     .section2 > {
         flex-direction: column;
         align-content: center;
@@ -151,9 +169,16 @@
              align-content: center;
         justify-content: center;
             text-overflow:hidden ;
+            /* max-width: 100%; */
             }  
-      
+            .section2 >div img {
+              max-width: 100%;
+            }  
 
+            .section2 >div h3  {
+               width: auto;
+               
+            }  
     /* ul > li > .new {
       display: flex;
       
@@ -218,12 +243,29 @@
     } */
   
 #logo1 img
+
+
+
+
+
 img {
 display: none;
 }
 
 @media (max-width: 450px) {
               
+  .login
+  {
+  
+    font-size:14px;
+    color:var(--main);
+    padding-left: 20px;
+
+    
+  }
+  
+
+
   .section3
   {
     
@@ -246,7 +288,7 @@ flex-wrap: nowrap;
 display: none;
 
       } .section3 div h3{
-width: 100vw;        
+        
 font-weight: 100;
               }
 
@@ -255,7 +297,7 @@ font-weight: 100;
 
         width: 15vw;
      
-        height:10vh;
+        height:15vh;
      
      
        }
@@ -263,3 +305,6 @@ font-weight: 100;
      
 
 }
+
+
+ 

@@ -103,19 +103,91 @@
 
 
 
-let button = document.querySelector('#btn');
-   let para = document.querySelector('#demo');
+// let button = document.querySelector('#btn');
+//    let para = document.querySelector('#demo');
     
-//    let para2 = document.querySelector('#demo2');
-   button.addEventListener('click',getRandomNum)
+// //    let para2 = document.querySelector('#demo2');
+//    button.addEventListener('click',getRandomNum)
 
-  //    .then(data => console.log(data.articles[1].content))
+//   //    .then(data => console.log(data.articles[1].content))
 
-function getRandomNum(e)
-{
-    fetch(" https://content.guardianapis.com/search?api-key=b5c1ccd1-6a2a-4882-985e-054e72abd95e")
-    .then(res => res.json())
-    .then(data =>{para.innerHTML = data.response.results[1].id })
-    // .then(data => console.log(data.results[1].sectionName))
-   //  .then(data => console.log(data))
- } 
+// function getRandomNum(e)
+// {
+//     fetch(" https://content.guardianapis.com/search?api-key=b5c1ccd1-6a2a-4882-985e-054e72abd95e")
+//     .then(res => res.json())
+//     // .then(data =>{para.innerHTML = data.response.results[1].id })
+//     // .then(data => console.log(data.results[1].sectionName))
+//     .then(data => console.log(data))
+// data.results.Map(article => {
+//    console.log(article.apiUrl);
+// })
+
+
+//  } 
+// let url = " https://content.guardianapis.com/search?api-key=b5c1ccd1-6a2a-4882-985e-054e72abd95e";
+//    fetch(url)
+// .then(res => res.json())
+   
+//     .then(data => console.log(data));
+
+// data.results.map(article => {
+//    console.log(article);
+
+// // })
+//  let azet="";
+// let url = " https://content.guardianapis.com/search?api-key=b5c1ccd1-6a2a-4882-985e-054e72abd95e";
+//    fetch(url)
+let api ="https://content.guardianapis.com/search?api-key=b5c1ccd1-6a2a-4882-985e-054e72abd95e";
+
+fetch(api)
+.then(response =>response.json())
+.then (datza => {
+    console.log(datza)
+
+    let zert = datza.response.results[1].apiUrl;
+    console.log(zert)
+  let button = document.querySelector('#btn');
+    button.addEventListener('click',getRandomNum)
+        function getRandomNum(e)
+      {
+              for(i=0; i<=4; i++){
+                var p = document. createElement('p');
+                p. innerHTML = datza.response.results[1].apiUrl ;
+                document. getElementById('demo3'). appendChild(p);
+   
+        
+          
+   console.log(  datza.response.results[1].apiUrl  );
+    
+        }
+     } 
+       
+})
+   
+
+
+
+
+// .then(res => res.json()) 
+//     .then(data => console.log(data));
+ 
+// data.results.map(article => {
+//    console.log(article);
+ 
+//  let button = document.querySelector('#btn');
+//     // let para = document.querySelector('#demo');
+//     let demo3 = document.querySelector('#demo');
+//    button.addEventListener('click',getRandomNum)
+//     function getRandomNum(e)
+//     {
+//          for(i=0; i<=4; i++){
+
+//       demo3.innerHTML= document.write(`<img src="https://source.unsplash.com/random/200*200">  je suis la propriété  qui correspond à la valeur   </img> <br> `);
+    
+//       location.href = "C:\project\blogProject\international.html";
+  
+
+//     }
+//    } 
+   
+
