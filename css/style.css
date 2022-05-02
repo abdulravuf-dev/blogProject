@@ -3,18 +3,34 @@
 /* @import url(/css/mobile.css); */
 
 @import url(variable.css);  
-
 body{ 
   
   margin:0 auto; }
-html, body { overflow-x: hidden; }
+html, body { overflow-x: scroll; }
 *{
   font-family: Arial, Helvetica, sans-serif;
   margin:0;
   padding:0;  
   box-sizing: border-box  ;
   }
-  
+
+ .list
+{
+  position: absolute;
+  width: 90vh;
+height: 100vh;
+background-color: red;
+z-index: 11;
+} 
+
+
+
+  #demo3 img 
+  {
+    width: 200px;
+    height:200px;
+    
+  }
   
 .logo 
   {
@@ -46,19 +62,19 @@ color: #ffffff;
     font-size: 20px;
       color:var(--greey);
     }
-  .list{
+  .list1{
     display: flex;
     background-color: black;
     flex-direction: row;
  }
-  .list li  a {
+  .list1 li  a {
     position: relative;
 
 
     color: white;
     text-decoration:none;
   }
-.list a:after{
+.list1 a:after{
 content: "";
 position: absolute;
 height: 2px;
@@ -69,24 +85,24 @@ background-color:rgb(13,190,152);
 transition: 0.3s;
 }
  
-.list a:hover:after{
+.list1 a:hover:after{
 color:var(--main);
 width: 100%;
 }  
 
 
- .list  li {
+ .list1  li {
     list-style: none;
     padding: 13px;
     color: aliceblue; 
   }
-  .list {
+  .list1 {
    display: flex;
     justify-content: center;
     align-content: center;
    }
   
-   .list a:hover {
+   .list1 a:hover {
     width: 0;
     color: var(--main);
   } 

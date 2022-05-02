@@ -137,32 +137,37 @@
 //  let azet="";
 // let url = " https://content.guardianapis.com/search?api-key=b5c1ccd1-6a2a-4882-985e-054e72abd95e";
 //    fetch(url)
-let api ="https://content.guardianapis.com/search?api-key=b5c1ccd1-6a2a-4882-985e-054e72abd95e";
 
-fetch(api)
-.then(response =>response.json())
-.then (datza => {
-    console.log(datza)
+// working code use this 
 
-    let zert = datza.response.results[1].apiUrl;
-    console.log(zert)
-  let button = document.querySelector('#btn');
-    button.addEventListener('click',getRandomNum)
-        function getRandomNum(e)
-      {
-              for(i=0; i<=4; i++){
-                var p = document. createElement('p');
-                p. innerHTML = datza.response.results[1].apiUrl ;
-                document. getElementById('demo3'). appendChild(p);
+
+
+// let api ="https://content.guardianapis.com/search?api-key=b5c1ccd1-6a2a-4882-985e-054e72abd95e";
+
+// fetch(api)
+// .then(response =>response.json())
+// .then (datza => {
+//     console.log(datza)
+
+//     let zert = datza.response.results[1].apiUrl;
+//     console.log(zert)
+//   let button = document.querySelector('#btn');
+//     button.addEventListener('click',getRandomNum)
+//         function getRandomNum(e)
+//       {
+//               for(i=0; i<=4; i++){
+//                 var p = document. createElement('p');
+//                 p. innerHTML = datza.response.results[1].apiUrl ;
+//                 document. getElementById('demo3'). appendChild(p);
    
         
           
-   console.log(  datza.response.results[1].apiUrl  );
+//    console.log(  datza.response.results[1].apiUrl  );
     
-        }
-     } 
+//         }
+//      } 
        
-})
+// })
    
 
 
@@ -191,3 +196,51 @@ fetch(api)
 //    } 
    
 
+ 
+// let api ="http://api.mediastack.com/v1/news?access_key=ac68da7db7eb060be6201bcf6e24a30"; 
+
+
+  //   let zert = datza.response.results[1].apiUrl;
+  //   console.log(zert)
+  // let button = document.querySelector('#btn');
+  //   button.addEventListener('click',getRandomNum)
+  //       function getRandomNum(e)
+  //     {
+  //             for(i=0; i<=4; i++){
+  //               var p = document. createElement('p');
+  //               p. innerHTML = datza.response.results[1].apiUrl ;
+  //               document. getElementById('demo3'). appendChild(p);
+     
+          
+  //  console.log(  datza.response.results[1].apiUrl  );
+    
+    //     }
+    //  } 
+       
+// })
+// let api ="http://api.mediastack.com/v1/news?access_key=ac68da7db7eb060be6201bcf6e24a30"; 
+
+// let api ="http://api.mediastack.com/v1/news?access_key=790a80957a9fe589c2e934b4eb3aa65d&languages=en,-de"; 
+  let api ="https://api.thenewsapi.com/v1/news/top?api_token=RbIqcYWzhGh1RtUXnM0AKcmgFlRKiB7PmZxvH5UW&search=france"; 
+
+  // let api ="https://content.guardianapis.com/search?api-key=b5c1ccd1-6a2a-4882-985e-054e72abd95e";
+
+fetch(api)
+.then(response =>response.json())
+.then (datas => {
+    console.log(datas)
+   
+ let button = document.getElementById("btn");
+  let display2= document.getElementById("demo3");  
+  button.addEventListener("click",mufunction)
+ 
+//      var img = document.createElement('img');
+//      img.src = datas.data[1].image_url;  
+function mufunction(){
+  display2.innerHTML += "<img src= "+datas.data[1].image_url">";
+  // display2.appendChild(img);
+}
+
+})
+
+  

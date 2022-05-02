@@ -45,7 +45,7 @@
     ul > li {
       list-style: none;
     }
-    .list {
+    .list1 {
       display: none; 
     }
 
@@ -179,28 +179,42 @@ height: 162px;
                width: auto;
                
             }  
-    /* ul > li > .new {
+/* 
+delete it  */
+
+
+    ul > li > .new {
       display: flex;
       
-     } */
-    /* .list {
-    /* change display flex here */
-      /* display: none;
+     } 
+    .list {
+ 
+      display: block;
       flex-direction: column;
-     top: 15%;
-     background-color: rgb(136, 237, 250);
-          width: 100vw;
-        height:100vh;
-        overflow: auto;
-        align-items: center;
-          justify-content: space-around;
+     top:10;
+     background-color: var(--primarycolor);
+            width: 90vw;
+        height:100vh;  
+        /* transform: translate(-100%);  */
         position: absolute;
       }
-      */
+      
+        /* .list_active {
+        transform: translate(0);
+      }  
+ */
+
+
+
+
+
+      
+    .list li a
+    {
+color: rgb(255, 255, 255);
     }
      
-  
-      /* .burger:hover .logo {
+ /* .burger:hover .logo {
         display: block;
         color: red;
         background-color: aqua;
