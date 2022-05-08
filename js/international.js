@@ -1,246 +1,242 @@
   
-// function getRandomNum(e)
-// {
-//     fetch("https://newsapi.org/v2/top-headlines?country=fr&category=business&apiKey=ad236ef1c81e4cc299a5427352fa90c2")
-//     .then(res => res.json())
-//     .then(data => console.log(data))
-// //    .then(data => console.log(data.articles[1].content))
- 
-//  } 
- 
 
-
-
-// let url ="https://newsapi.org/v2/top-headlines?country=fr&apiKey=ad236ef1c81e4cc299a5427352fa90c2";
-// $.ajax(url,(response) => {
-//     alert(response);
-// });  
-
-// $(document).ready(function () {
-
-//     let url = "https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=dc57ef5c4b5b4de487d6b685bf401be9";
+//   fetch('https://gnews.io/api/v4/top-headlines?&token&token=5c20e1113984690e47d0c77c02227ca4') 
+// .then(function (response) {
+//   return response.json();
   
-//     $.ajax({
-//       url: url,
-//       method: "GET",
-//       dataType: "JSON",
-//     });  
+// })
+// .then(function (data) {
 
-// fetch("https://newsapi.org/v2/everything?q=Apple&from=2022-04-25&sortBy=popularity&apiKey=ad236ef1c81e4cc299a5427352fa90c2")
-// .then(res => res.json())
-//     //  .then (datas => console.log(datas) )
-//     .then (datas.forEach.
+// console.log(data);
+  
+// let imageApi = document.querySelector('#imageApi')
+
+
+// for(let i=0; i<=5; i++)
+// { 
+
+//     imageApi.innerHTML +=  `
+// <div class="InterDisplay"><img class ="InterImage" src= ${data.articles[i].image} >     
+//  <div class="InterDisplay2">
+// <p id="InterPara">  ${data.articles[i].title} </p>  
+// <p id="InterPara">  ${data.articles[i].description} </p> 
+// <a href=" ${data.articles[i].url}"><button>Visit Page Now</button></a>
+// </div>
+// </div>`  
+// }
+
+  
+
+// })
+
+
+
+ 
+ fetch('https://gnews.io/api/v4/top-headlines?q=internationale&language=fr&token=4ba691ab1fcd5a75cbb4e787a05ca325') 
+ 
+
+  //fetch('https://gnews.io/api/v4/top-headlines?q=politique&language=fr&token=c7e7ff9e5309678ffee247a96531a76d') 
+.then(function (response) {
+  return response.json();
+  
+})
+.then(function (data) {
+
+console.log(data);
+  
+let imageApi = document.querySelector('#imageApi')
+
+
+for(let i=0; i<=10; i++)
+{ 
+    if( data.articles[i].image === null)
+      {
+        imageApi.innerHTML.remove();
       
-//     }); => console.log(datas) )
-
-
-// const datas="";
-// datas.map((values)=>{
-//     datas =`<h1>${values.content}</h1>`;
-// });
-// let eeet = document.getElementById(nesss).innerHTML =  datas;
- 
-// .then((data)=>{
-//     return data.json();})
-//     .then (datas => { console.log(datas.articles[1].content)
-//     const html =datas.articles[1].content.Map(articles =>{
-//         return user.content;
-//      document.getElementById("demo").innerHTML = html.get("articles");
-//     })
-
     
-    // });
-// .then((data)=>{
-//     return data.json();})
-//     .then (datas => { console.log(datas.articles[1].content)
-//     const html =new maparticles[1].content.map(articles =>{
-   
-//         document.getElementById("demo").innerHTML = html.get("articles");
-//     })
+    }
+    else 
+    {
 
-    
-//     });
-
-// let button = document.getElementById("btn");
-// console.log
+    imageApi.innerHTML +=  `
+<div class="InterArticle"><a href=" ${data.articles[i].url}"><img class="InterImage" src= ${data.articles[i].image} >   </a>
+ <div class="InterArticleChild">
+ <a class="InterAnchor" href=" ${data.articles[i].url}"><h3 class="InterTitle">  ${data.articles[i].title} </h3>     </a>
+<p class="InterPara">  ${data.articles[i].description} </p> 
  
-//   fetch("https://newsapi.org/v2/top-headlines?country=fr&category=business&apiKey=ad236ef1c81e4cc299a5427352fa90c2")
-//  .then(res => res.json())
+</div>
+</div>`  
+}
 
-//   let button = document.querySelector('#btn');
- 
- 
- 
-//    let para = document.querySelector('#demo');
-    
-// //    let para2 = document.querySelector('#demo2');
-//    button.addEventListener('click',getRandomNum)
-
-//   //    .then(data => console.log(data.articles[1].content))
-
-// function getRandomNum(e)
-// {
-//     fetch("https://newsapi.org/v2/top-headlines?country=fr&category=business&apiKey=ad236ef1c81e4cc299a5427352fa90c2")
-//     .then(res => res.json())
-//     // .then(data => console.log(data))
-    
-//      .then(data =>{para.innerHTML = data.articles[1].url  })
-
-//     // .then(data =>{para.innerHTML = `<img src="${data.articles[1].urlToImage}" </img>`;})
-//     // `<img src="${data.articles[1].urlToImage}
-
-
-    
-//  } 
- 
-//  function getRandomNum(e)
-//  {
-//      fetch("https://newsapi.org/v2/top-headlines?country=fr&category=business&apiKey=ad236ef1c81e4cc299a5427352fa90c2")
-//      .then(res => res.json())
-//      .then(data =>{para2.innerHTML = data.articles[2].title     })
-  
-//   } 
-
-
-
-// let button = document.querySelector('#btn');
-//    let para = document.querySelector('#demo');
-    
-// //    let para2 = document.querySelector('#demo2');
-//    button.addEventListener('click',getRandomNum)
-
-//   //    .then(data => console.log(data.articles[1].content))
-
-// function getRandomNum(e)
-// {
-//     fetch(" https://content.guardianapis.com/search?api-key=b5c1ccd1-6a2a-4882-985e-054e72abd95e")
-//     .then(res => res.json())
-//     // .then(data =>{para.innerHTML = data.response.results[1].id })
-//     // .then(data => console.log(data.results[1].sectionName))
-//     .then(data => console.log(data))
-// data.results.Map(article => {
-//    console.log(article.apiUrl);
-// })
-
-
-//  } 
-// let url = " https://content.guardianapis.com/search?api-key=b5c1ccd1-6a2a-4882-985e-054e72abd95e";
-//    fetch(url)
-// .then(res => res.json())
-   
-//     .then(data => console.log(data));
-
-// data.results.map(article => {
-//    console.log(article);
-
-// // })
-//  let azet="";
-// let url = " https://content.guardianapis.com/search?api-key=b5c1ccd1-6a2a-4882-985e-054e72abd95e";
-//    fetch(url)
-
-// working code use this 
-
-
-
-// let api ="https://content.guardianapis.com/search?api-key=b5c1ccd1-6a2a-4882-985e-054e72abd95e";
-
-// fetch(api)
-// .then(response =>response.json())
-// .then (datza => {
-//     console.log(datza)
-
-//     let zert = datza.response.results[1].apiUrl;
-//     console.log(zert)
-//   let button = document.querySelector('#btn');
-//     button.addEventListener('click',getRandomNum)
-//         function getRandomNum(e)
-//       {
-//               for(i=0; i<=4; i++){
-//                 var p = document. createElement('p');
-//                 p. innerHTML = datza.response.results[1].apiUrl ;
-//                 document. getElementById('demo3'). appendChild(p);
-   
-        
-          
-//    console.log(  datza.response.results[1].apiUrl  );
-    
-//         }
-//      } 
-       
-// })
-   
-
-
-
-
-// .then(res => res.json()) 
-//     .then(data => console.log(data));
- 
-// data.results.map(article => {
-//    console.log(article);
- 
-//  let button = document.querySelector('#btn');
-//     // let para = document.querySelector('#demo');
-//     let demo3 = document.querySelector('#demo');
-//    button.addEventListener('click',getRandomNum)
-//     function getRandomNum(e)
-//     {
-//          for(i=0; i<=4; i++){
-
-//       demo3.innerHTML= document.write(`<img src="https://source.unsplash.com/random/200*200">  je suis la propriété  qui correspond à la valeur   </img> <br> `);
-    
-//       location.href = "C:\project\blogProject\international.html";
-  
-
-//     }
-//    } 
-   
-
- 
-// let api ="http://api.mediastack.com/v1/news?access_key=ac68da7db7eb060be6201bcf6e24a30"; 
-
-
-  //   let zert = datza.response.results[1].apiUrl;
-  //   console.log(zert)
-  // let button = document.querySelector('#btn');
-  //   button.addEventListener('click',getRandomNum)
-  //       function getRandomNum(e)
-  //     {
-  //             for(i=0; i<=4; i++){
-  //               var p = document. createElement('p');
-  //               p. innerHTML = datza.response.results[1].apiUrl ;
-  //               document. getElementById('demo3'). appendChild(p);
-     
-          
-  //  console.log(  datza.response.results[1].apiUrl  );
-    
-    //     }
-    //  } 
-       
-// })
-// let api ="http://api.mediastack.com/v1/news?access_key=ac68da7db7eb060be6201bcf6e24a30"; 
-
-// let api ="http://api.mediastack.com/v1/news?access_key=790a80957a9fe589c2e934b4eb3aa65d&languages=en,-de"; 
-  let api ="https://api.thenewsapi.com/v1/news/top?api_token=RbIqcYWzhGh1RtUXnM0AKcmgFlRKiB7PmZxvH5UW&search=france"; 
-
-  // let api ="https://content.guardianapis.com/search?api-key=b5c1ccd1-6a2a-4882-985e-054e72abd95e";
-
-fetch(api)
-.then(response =>response.json())
-.then (datas => {
-    console.log(datas)
-   
- let button = document.getElementById("btn");
-  let display2= document.getElementById("demo3");  
-  button.addEventListener("click",mufunction)
- 
-//      var img = document.createElement('img');
-//      img.src = datas.data[1].image_url;  
-function mufunction(){
-  display2.innerHTML += "<img src= "+datas.data[1].image_url">";
-  // display2.appendChild(img);
 }
 
 })
 
-  
+
+ 
+//     // https://api.thenewsapi.com/v1/news/top?api_token=RbIqcYWzhGh1RtUXnM0AKcmgFlRKiB7PmZxvH5UW&locale=us&limit=3
+ 
+//       fetch("https://api.thenewsapi.com/v1/news/top-headlines?locale=fr&language=fr&api_token=RbIqcYWzhGh1RtUXnM0AKcmgFlRKiB7PmZxvH5UW")
+//   .then(function (response) {
+//     return response.json();
+    
+// })
+// .then(function (data) {
+
+//   console.log(data);
+    
+// let imageApi = document.querySelector('#imageApi')
+
+//     for(let i=0; i<=20; i++)
+//     {
+
+//   if( data.data[i].urlToImage === null)
+//   {
+// console.log("erroer ")
+//  i = i + 1;
+
+// }
+
+// else
+// {
+//   imageApi.innerHTML +=  `
+//   <div class="InterDisplay"><img class ="InterImage" src= ${data.data[i].image_url} >     
+//    <div class="InterDisplay2">
+//   <p id="InterPara">  ${data.data[i].title} </p>  
+//   <p id="InterPara">  ${data.data[i].description} </p> 
+//   <a href=" ${data.data[i].url}"><button>Visit Page Now</button></a>
+//   </div>
+//   </div>`  
+// }  
+
+//   } 
+
+
+
+//   });
+
+
+
+
+
+
+
+
+
+    
+
+
+//********************************************* */ G news *****************************************
+
+      // fetch("https://newsapi.org/v2/top-headlines?country=fr&category=business&apiKey=ad236ef1c81e4cc299a5427352fa90c2")
+
+
+// fetch('https://gnews.io/api/v4/top-headlines?q=main&country=fr&language=fr&inurl=lamonde.com&token=5c20e1113984690e47d0c77c02227ca4')
+ 
+//     .then(function (response) {
+//         return response.json();
+        
+//     })
+//     .then(function (data) {
+
+//       console.log(data);
+
+//         console.log(data.articles[1].content);
+    
+//         let imageApi = document.querySelector('#imageApi') 
+
+//         for(let i=1; i<=6; i++)
+//         {
+//       imageApi.innerHTML +=  `
+      
+//       <div class="InterDisplay"><img class ="InterImage" src= ${data.articles[i].image} >     
+//        <div class="InterDisplay2">
+//       <p id="InterPara">  ${data.articles[i].title} </p>  
+//       <p id="InterPara">  ${data.articles[i].description} </p> 
+//       <a href=" ${data.articles[i].url}"><button>Visit Page Now</button></a>
+//       </div>
+//       </div>`  
+       
+//       } 
+//     });
+
+    // fetch('https://gnews.io/api/v4/top-headlines?q=main&country=us&language=fr&token=c2b9b2c9c0d7d431d1b0723515c24e55')
+ 
+    // .then(function (response) {
+    //     return response.json();
+        
+    // })
+    // .then(function (data) {
+
+    //   console.log(data);
+    //     console.log(data.articles[1].content);
+    // let imageApi = document.querySelector('#imageApi')
+
+    //     for(let i=0; i<=6; i++)
+    //     {
+    //   imageApi.innerHTML +=  `
+      
+    //   <div class="InterDisplay"><img class ="InterImage" src= ${data.articles[i].image} >     
+    //    <div class="InterDisplay2">
+    //   <p id="InterPara">  ${data.articles[i].title} </p>  
+    //   <p id="InterPara">  ${data.articles[i].description} </p> 
+    //   <a href=" ${data.articles[i].url}"><button>Visit Page Now</button></a>
+    //   </div>
+    //   </div>`  
+       
+    //   } 
+    // });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  //  fetch('https://gnews.io/api/v4/top-headlines?&token=c2b9b2c9c0d7d431d1b0723515c24e55')
+  //   .then(function (response) {
+
+  //       return response.json();
+        
+  //   })
+  //   .then(function(data) {
+
+  //     console.log(data);
+      
+       
+  //       for(let i=0; i<9; i++)
+  //       {
+  //     imageApi2.innerHTML +=  `<img src= ${data.articles[i].image}   >     
+  //     <p> ${data.articles[i].description} </p>  `  ;
+      
+       
+  //   }
+  //  });
+
+    // https://gnewsapi.net/api/search?q=covid-19&country=us&language=en&limit=5&api_token=[YourApiTokenHere]
+
+
+
+
+
+
+//     // apis 
+// fake email 
+    //   c2b9b2c9c0d7d431d1b0723515c24e55  
+
+
+
+
+

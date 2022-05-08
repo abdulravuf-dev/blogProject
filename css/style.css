@@ -6,12 +6,19 @@
 body{ 
   
   margin:0 auto; }
-html, body { overflow-x: scroll; }
+
+  html, body { overflow-x: scroll; }
 *{
   font-family: Arial, Helvetica, sans-serif;
   margin:0;
   padding:0;  
   box-sizing: border-box  ;
+
+}
+
+  .list
+  {
+    display: none;
   }
 
  .list
@@ -19,10 +26,22 @@ html, body { overflow-x: scroll; }
   position: absolute;
   width: 90vh;
 height: 100vh;
-background-color: red;
+opacity: 0.8;
+background-color: rgb(10, 10, 10);
 z-index: 11;
 } 
+.list li a
+{
+  text-decoration: none;
+ padding:20px;
+  color:white
+} 
 
+.list li 
+{
+ padding:20px;
+  list-style: none;
+} 
 
 
   #demo3 img 
@@ -229,11 +248,8 @@ width: 20vh;
      
       width: 162px;
       }
-
-     
-
-
-
+ 
+ 
     .section3 div img {
 
 

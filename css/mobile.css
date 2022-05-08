@@ -4,6 +4,12 @@
 
 
  @media (max-width: 768px) {
+ 
+  .list
+  {
+    display: none;
+  }
+
   .login
   {
   
@@ -187,7 +193,7 @@ delete it  */
       display: flex;
       
      } 
-    .list {
+    /* .list {
  
       display: block;
       flex-direction: column;
@@ -198,7 +204,7 @@ delete it  */
         /* transform: translate(-100%);  */
         position: absolute;
       }
-      
+       */
         /* .list_active {
         transform: translate(0);
       }  
@@ -248,24 +254,29 @@ color: rgb(255, 255, 255);
     .foot span{
      display: flex;
      flex-direction: column;
-     padding: 20px;
-     padding: 9px;
+     /* padding: 20px;
+     padding: 9px; */
      gap: 16px;
+     align-content: flex-start;
      margin: -2px;
      text-align: start;
+ 
+    } 
+    
+
+
+    
+    
+    
+   
   
-    } */
-  
-#logo1 img
+ 
 
 
 
 
-
-img {
-display: none;
-}
-
+  }
+ 
 @media (max-width: 450px) {
               
   .login
@@ -321,4 +332,14 @@ font-weight: 100;
 }
 
 
- 
+@media (max-width: 401px) {
+              
+  .section3 div{
+    width: 100%;
+  
+  
+  align-content:center;
+  justify-content: center;
+  align-items: center;
+  }
+}

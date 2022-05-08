@@ -318,3 +318,37 @@ flex-direction: column;
                 
                 }
                 
+
+
+
+                junk jsss*
+
+
+                let api ="https://api.thenewsapi.com/v1/news/top?api_token=RbIqcYWzhGh1RtUXnM0AKcmgFlRKiB7PmZxvH5UW&search=politique"; 
+
+// let api ="https://content.guardianapis.com/search?api-key=b5c1ccd1-6a2a-4882-985e-054e72abd95e";
+
+fetch(api)
+.then(response =>response.json())
+.then (datas => {
+  console.log(datas)
+ 
+let button = document.getElementById("btn");
+let display2= document.getElementById("demo3");  
+button.addEventListener("click",mufunction())
+
+//      var img = document.createElement('img');
+//      img.src = datas.data[1].image_url;  
+
+let para = `${datas.data[1].description} `;
+// console.log(para)
+function mufunction(){
+for(i=0; i<5; i++)
+display2.innerHTML +=  `<img src= ${datas.data[i].image_url} > ` +`<P> ${datas.data[1].description} </P>   `;
+
+
+// display2.appendChild(img);
+
+}
+
+})
