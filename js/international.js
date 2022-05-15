@@ -26,13 +26,13 @@
 // }
 
   
-
+ 
 // })
 
 
 
  
- fetch('https://gnews.io/api/v4/top-headlines?q=internationale&language=fr&token=4ba691ab1fcd5a75cbb4e787a05ca325') 
+ fetch('https://gnews.io/api/v4/top-headlines?&language=fr&q=internationale&token=4ba691ab1fcd5a75cbb4e787a05ca325') 
  
 
   //fetch('https://gnews.io/api/v4/top-headlines?q=politique&language=fr&token=c7e7ff9e5309678ffee247a96531a76d') 

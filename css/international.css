@@ -1,3 +1,12 @@
+.InterH1{
+
+display: flex;
+justify-content:flex-start;
+padding-left: 200px;
+}
+
+
+ 
 .InterImage  
 { 
 width: 350px;
@@ -33,7 +42,7 @@ color: rgb(29, 28, 28);
         align-content: center;
         justify-content: center;
         padding: 14px;
-        
+
     }  
     .InterArticleChild
     {
@@ -48,4 +57,49 @@ color: rgb(29, 28, 28);
         
        
     }  
-   
+    
+
+ @media (max-width: 768px) {
+ 
+    .InterArticleChild
+    {
+        gap:20px;
+        max-width: 100%;
+        flex-direction: column;
+ 
+ 
+        
+       
+    }  
+    
+  
+    .InterArticle
+    {
+      
+        display: flex;
+        flex-direction: column;
+       
+     
+    }  
+
+    .InterImage  
+    { 
+        height: 400px;
+        width: 739px;
+     max-width: 100%;
+
+    }
+
+
+    .InterPara,.InterAnchor
+    { 
+        height: auto;
+        width: 739px;
+     max-width: 100%;
+     
+        }
+
+
+
+ 
+}

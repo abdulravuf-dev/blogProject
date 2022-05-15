@@ -15,7 +15,28 @@ body{
   box-sizing: border-box  ;
 
 }
+/* .menu{
 
+  position: none;
+} */
+ 
+
+.IndexSec1ID
+{
+display: flex;
+align-content: center;
+justify-content: center;
+background-color: red;
+width: 100%;
+font-size: 19px;
+
+
+}
+.firNav
+{
+
+  position: none;
+}
   .list
   {
     display: none;
@@ -23,7 +44,7 @@ body{
 
  .list
 {
-  position: absolute;
+  position:fixed;
   width: 90vh;
 height: 100vh;
 opacity: 0.8;
@@ -50,14 +71,13 @@ z-index: 11;
     height:200px;
     
   }
-  
 .logo 
   {
     height: 33px;
      width: 101%;
 } 
 .menu
-{
+{ 
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -142,7 +162,7 @@ background-color: #EDE3E5;
 }
   .img1 {
   max-width: 100%;
-  width:745px;  
+  width:745px;   
 }
 
  .tags a{ 
@@ -201,6 +221,12 @@ padding: 20px;
     margin:54px 347px 0px 0px ;
 
   }
+
+  .section3 > div > h1 {
+    color: var(--third);
+    width: 40px;
+    font-size: 18px;
+}
   .section3
   {
     
@@ -244,7 +270,7 @@ width: 20vh;
       font-size: 1.25rem;
       font-weight: 300;
       line-height: 0.9;
-      height: 91px;
+      height: auto;
      
       width: 162px;
       }
