@@ -22,7 +22,7 @@ for(let i=1; i<=10; i++)
     environn.innerHTML +=  `
 <div class="InterArticle"><a href=" ${data.articles[i].url}"><img class="InterImage" src= ${data.articles[i].image} >  </a>
 <div class="InterArticleChild">
-<a class="InterAnchor" href=" window.open( ${data.articles[i].url} ,'_blank')"><h3 class="InterTitle">  ${data.articles[i].title} </h3>     </a>
+<a class="InterAnchor" href=" ${data.articles[i].url}"><h3 class="InterTitle">  ${data.articles[i].title} </h3>     </a>
 <p class="InterPara">  ${data.articles[i].description} </p>  
 </div>
 </div>`  

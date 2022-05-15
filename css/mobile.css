@@ -225,8 +225,8 @@ delete it  */
             width: 90vw;
         height:100vh;  
         /* transform: translate(-100%);  */
-        position: absolute;
-      }
+        /* position: absolute;
+      } */
        */
         /* .list_active {
         transform: translate(0);
@@ -372,7 +372,7 @@ font-size: 18px;
   
   align-content:center;
   justify-content: center;
-  align-items: center;
+  align-items:flex-start;;
   }
   .image1  {
     height: auto;

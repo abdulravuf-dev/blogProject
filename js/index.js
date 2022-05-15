@@ -2,7 +2,7 @@
 
 //change unlock main dic cxkzndkln
 
- fetch('https://gnews.io/api/v4/search?q=nouvelles&country=fr&language=fr&token=4ba691ab1fcd5a75cbb4e787a05ca325') 
+ fetch('https://gnews.io/api/v4/top-headlines?q=actualite&country=fr&language=fr&token=d5f206a4d517392d6b6caece38615886') 
  
 .then(function (response) {
   return response.json();
@@ -18,10 +18,10 @@ console.log(data);
   let indexTitle = document.getElementById('indexTitle')
 
 // index img start
-  img1.src= ` ${data.articles[6].image}`
-imgUrl.href=` ${data.articles[6].url}`
-indexTitle.innerHTML=` ${data.articles[6].title}`
-indexUrl.href=` ${data.articles[6].url}`
+  img1.src= ` ${data.articles[2].image}`
+imgUrl.href=` ${data.articles[2].url}`
+indexTitle.innerHTML=` ${data.articles[2].title}`
+indexUrl.href=` ${data.articles[2].url}`
 // index img end 
 
 
@@ -45,8 +45,6 @@ let anchors4 = document.getElementById('anchors4')
  anchors4.href =` ${data.articles[4].url}`
  
 
- 
- 
 })
  
 
@@ -54,8 +52,8 @@ let anchors4 = document.getElementById('anchors4')
 
 
 
-// sasasas
- fetch('https://gnews.io/api/v4/top-headlines?q=politiques&country=fr&language=fr&token=4ba691ab1fcd5a75cbb4e787a05ca325') 
+// change api here
+ fetch('https://gnews.io/api/v4/top-headlines?q=politiques&country=fr&language=fr&token=d5f206a4d517392d6b6caece38615886') 
 
   
   
@@ -85,48 +83,41 @@ let anchors4 = document.getElementById('anchors4')
 })
 
 
+ 
 
-//fetch('https://gnews.io/api/v4/top-headlines?q=politiques&country=fr&language=fr&token=c7e7ff9e5309678ffee247a96531a76d') 
+// change api here
+fetch('https://gnews.io/api/v4/top-headlines?&language=fr&q=internationale&token=d5f206a4d517392d6b6caece38615886') 
+.then(function (response) {
+  return response.json();
+})
+.then(function (data) {
 
-  
-// fetch('https://gnews.io/api/v4/top-headlines?&language=fr&q=internationale&token=1c2aa79c3174675bd93eb73bc231709b') 
-// .then(function (response) {
-//   return response.json();
-// })
-// .then(function (data) {
-
-// console.log(data);
-
+console.log(data);
 
 
-// // let Index3H1 = document.getElementsByClassName('Index3H1');
 
-// let IndexImgSec3 = document.getElementsByClassName('IndexImgSec3');
+ 
+ let Index3H1 = document.getElementsByClassName('Index3H1');
+
+let imageIndexSection3 = document.getElementsByClassName('imageIndexSection3');
 
 
-// console.log(imags[1])
 
 
-//    for(let i=0; i<=4; i++)
-//    {
+   for(let i=0; i<=4; i++)
+   {
    
 
-//     IndexImgSec3[i].src =` ${data.articles[i].image}`
-// // Index3H1[i].innerHTML=` ${data.articles[i].title}`
+    imageIndexSection3[i].src =` ${data.articles[i].image}`
+   Index3H1[i].innerHTML=` ${data.articles[i].title}`
 
-// } 
+} 
 
-// })
+})
 
 
+  
  
-
- 
- 
-
-
- 
-
 
   let  x = document.querySelector(".fa-bars");
   let  main = document.querySelector("main");
