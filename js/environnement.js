@@ -5,7 +5,7 @@
    
 
 
- //fetch('https://gnews.io/api/v4/environnment?q=environnment&language=fr&token=c7e7ff9e5309678ffee247a96531a76d') 
+ //fetch('https://gnews.io/api/v4/environnment?q=environnment&language=fr&token=5c20e1113984690e47d0c77c02227ca4') 
 .then(function (response) {
  return response.json();
  

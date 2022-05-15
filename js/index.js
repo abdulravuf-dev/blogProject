@@ -2,7 +2,11 @@
 
 //change unlock main dic cxkzndkln
 
+<<<<<<< HEAD
  fetch('https://gnews.io/api/v4/top-headlines?q=actualite&country=fr&language=fr&token=d5f206a4d517392d6b6caece38615886') 
+=======
+ fetch('https://gnews.io/api/v4/search?q=nouvelles&country=fr&language=fr&token=5c20e1113984690e47d0c77c02227ca4') 
+>>>>>>> 84dbbdf4704b69fc422837e0ac6a4353e6c98b52
  
 .then(function (response) {
   return response.json();
