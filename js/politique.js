@@ -1,7 +1,5 @@
-
- //fetch('https://gnews.io/api/v4/top-headlines?&language=fr&q=internationale&token=4ba691ab1fcd5a75cbb4e787a05ca325') 
  
- fetch('https://gnews.io/api/v4/search?q=nouvelles&country=fr&language=fr&token=d5f206a4d517392d6b6caece38615886') 
+ fetch('https://gnews.io/api/v4/search?q=politique&country=fr&language=fr&token=1c2aa79c3174675bd93eb73bc231709b') 
  
 .then(function (response) {
  return response.json();
@@ -11,7 +9,7 @@
 
 console.log(data);
  
-let imageApi = document.querySelector('#imageApi')
+let imageApi = document.querySelector('.PolitiqueDivi')
  
 for(let i=0; i<=10; i++)
 { 

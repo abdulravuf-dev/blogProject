@@ -1,6 +1,10 @@
-  
+ 
+ 
 
-  fetch('https://gnews.io/api/v4/top-headlines?&token&token=5c20e1113984690e47d0c77c02227ca4') 
+ //fetch('https://gnews.io/api/v4/top-headlines?&language=fr&q=internationale&token=5c20e1113984690e47d0c77c02227ca4') 
+ 
+
+ fetch('https://gnews.io/api/v4/top-headlines?q=politique&language=fr&token=c7e7ff9e5309678ffee247a96531a76d') 
 .then(function (response) {
   return response.json();
   
@@ -12,65 +16,39 @@ console.log(data);
 let imageApi = document.querySelector('#imageApi')
 
 
-for(let i=0; i<=5; i++)
+for(let i=0; i<=10; i++)
 { 
+    if( data.articles[i].image === null)
+      {
+        imageApi.innerHTML.remove();
+      
+    
+    }
+    else 
+    {
 
     imageApi.innerHTML +=  `
-<div class="InterDisplay"><img class ="InterImage" src= ${data.articles[i].image} >     
- <div class="InterDisplay2">
-<p id="InterPara">  ${data.articles[i].title} </p>  
-<p id="InterPara">  ${data.articles[i].description} </p> 
-<a href=" ${data.articles[i].url}"><button>Visit Page Now</button></a>
+<div class="InterArticle" id="InterArticleId">     <a href=" ${data.articles[i].url}"><img class="InterImage" src= ${data.articles[i].image} >   </a>
+ <div class="InterArticleChild">
+ <a class="InterAnchor" href=" ${data.articles[i].url}"><h3 class="InterTitle">  ${data.articles[i].title} </h3>     </a>
+<p class="InterPara">  ${data.articles[i].description} </p> 
+ 
 </div>
 </div>`  
 }
 
-  
- 
+}
+
 })
 
- 
- 
 
-//  fetch('https://gnews.io/api/v4/top-headlines?&language=fr&q=internationale&token=d5f206a4d517392d6b6caece38615886') 
- 
+let header1 = document.getElementById('InterArticleId')
 
-//   //fetch('https://gnews.io/api/v4/top-headlines?q=politique&language=fr&token=c7e7ff9e5309678ffee247a96531a76d') 
-// .then(function (response) {
-//   return response.json();
-  
-// })
-// .then(function (data) {
-
-// console.log(data);
-  
-// let imageApi = document.querySelector('#imageApi')
+header1[0].innerHTML =`<h1 class="InterH1">INTERNATIONAL</h1> `
 
 
-// for(let i=0; i<=10; i++)
-// { 
-//     if( data.articles[i].image === null)
-//       {
-//         imageApi.innerHTML.remove();
-      
-    
-//     }
-//     else 
-//     {
+console.log(header1)
 
-//     imageApi.innerHTML +=  `
-// <div class="InterArticle"><a href=" ${data.articles[i].url}"><img class="InterImage" src= ${data.articles[i].image} >   </a>
-//  <div class="InterArticleChild">
-//  <a class="InterAnchor" href=" ${data.articles[i].url}"><h3 class="InterTitle">  ${data.articles[i].title} </h3>     </a>
-// <p class="InterPara">  ${data.articles[i].description} </p> 
- 
-// </div>
-// </div>`  
-// }
-
-// }
-
-// })
 
 
  

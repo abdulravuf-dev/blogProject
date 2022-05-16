@@ -1,0 +1,60 @@
+.InterImage  
+{ 
+width: 350px;
+ max-width: 100%;
+height: 206px;
+}
+.InterAnchor
+{
+
+text-decoration:none;
+color: black;
+}
+.InterAnchor:hover
+{
+
+text-decoration:underline;
+color: rgb(29, 28, 28);
+}
+ 
+.InterPara,.InterAnchor
+{ 
+    width: 540px;
+   
+    max-width: 100%;
+ 
+    }
+ 
+   
+ .InterArticle
+    {
+         gap: 10px; 
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+        justify-content: center;
+        padding: 14px;
+        
+    }  
+    .InterArticleChild
+    {
+          
+        
+        /* gap:20px; */
+        display: flex;
+        overflow: hidden;
+        flex-direction: column;
+        align-content: flex-start;
+ 
+        
+       
+    }  
+   
+
+    .InterH1{
+
+
+        display: flex;
+        align-content: center;
+        justify-content: center;
+    }

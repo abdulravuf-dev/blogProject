@@ -1,12 +1,11 @@
  
 
 //change unlock main dic cxkzndkln
-
-<<<<<<< HEAD
- fetch('https://gnews.io/api/v4/top-headlines?q=actualite&country=fr&language=fr&token=d5f206a4d517392d6b6caece38615886') 
-=======
- fetch('https://gnews.io/api/v4/search?q=nouvelles&country=fr&language=fr&token=5c20e1113984690e47d0c77c02227ca4') 
->>>>>>> 84dbbdf4704b69fc422837e0ac6a4353e6c98b52
+ 
+ fetch('https://gnews.io/api/v4/top-headlines?q=francaise&country=fr&language=fr&token=5c20e1113984690e47d0c77c02227ca4') 
+ 
+ //fetch('https://gnews.io/api/v4/search?q=nouvelles&country=fr&language=fr&token=5c20e1113984690e47d0c77c02227ca4') 
+ 
  
 .then(function (response) {
   return response.json();
@@ -22,10 +21,10 @@ console.log(data);
   let indexTitle = document.getElementById('indexTitle')
 
 // index img start
-  img1.src= ` ${data.articles[2].image}`
-imgUrl.href=` ${data.articles[2].url}`
-indexTitle.innerHTML=` ${data.articles[2].title}`
-indexUrl.href=` ${data.articles[2].url}`
+  img1.src= ` ${data.articles[6].image}`
+imgUrl.href=` ${data.articles[6].url}`
+indexTitle.innerHTML=` ${data.articles[6].title}`
+indexUrl.href=` ${data.articles[6].url}`
 // index img end 
 
 
@@ -57,7 +56,7 @@ let anchors4 = document.getElementById('anchors4')
 
 
 // change api here
- fetch('https://gnews.io/api/v4/top-headlines?q=politiques&country=fr&language=fr&token=d5f206a4d517392d6b6caece38615886') 
+ fetch('https://gnews.io/api/v4/top-headlines?q=politique&country=fr&language=fr&token=5c20e1113984690e47d0c77c02227ca4') 
 
   
   
@@ -90,7 +89,7 @@ let anchors4 = document.getElementById('anchors4')
  
 
 // change api here
-fetch('https://gnews.io/api/v4/top-headlines?&language=fr&q=internationale&token=d5f206a4d517392d6b6caece38615886') 
+fetch('https://gnews.io/api/v4/top-headlines?&language=fr&q=internationale&token=5c20e1113984690e47d0c77c02227ca4') 
 .then(function (response) {
   return response.json();
 })
