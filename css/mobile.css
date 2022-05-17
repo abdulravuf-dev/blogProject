@@ -330,7 +330,7 @@ flex-wrap: nowrap;
       gap: 2px;
       margin: 20px;
       border-bottom: 1PX solid grey;
-
+      flex-direction: column;
       }
       .section3 div h1{
 display: none;
@@ -343,10 +343,10 @@ font-weight: 100;
       .section3 div img {
 
 
-        width: 15vw;
-     
-        height:15vh;
-     
+      
+    width: 80vw;
+ 
+    height:15vh;
      
        }
      
@@ -358,7 +358,10 @@ font-weight: 100;
 @media (max-width: 401px) {
               
 
- 
+  .section3 div h3 {
+    font-weight: 100;
+    width: 290px;
+}
  
 .image1 h1
 {
@@ -368,7 +371,7 @@ font-size: 18px;
 }
   .section3 div{
     width: 100%;
-  
+    flex-direction: column;
   
   align-content:center;
   justify-content: center;

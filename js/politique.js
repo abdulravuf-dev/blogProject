@@ -1,5 +1,5 @@
  
- fetch('https://gnews.io/api/v4/search?q=politique&country=fr&language=fr&token=1c2aa79c3174675bd93eb73bc231709b') 
+ fetch('https://gnews.io/api/v4/top-headlines?q=locale&language=fr&token=c7e7ff9e5309678ffee247a96531a76d') 
  
 .then(function (response) {
  return response.json();
