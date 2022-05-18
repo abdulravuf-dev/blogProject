@@ -22,12 +22,14 @@ body{
   position: none;
 } */
  
-.IndexArticle
+  .IndexArticle
 {
   display: flex;
   justify-content: center;
   align-content: center;
-
+  
+  margin: 54px 235px 0px 11px;
+ 
  max-width: 100%
  ;
 
@@ -38,7 +40,7 @@ body{
   max-width: 100%;
 
  }
-
+ 
 
 
 .IndexSec1ID

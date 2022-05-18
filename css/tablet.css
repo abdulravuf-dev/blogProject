@@ -26,7 +26,8 @@ padding:20px;
   .mobile
   {
 
-    margin:54px 347px 0px 0px ;
+    margin: 54px 468px 0px 0px;
+
     padding-left: 37vw;
   }
   .section3
@@ -133,5 +134,9 @@ width: 20vh;
   }
   
 
+  .IndexSec1ID {
+       width: max-content;
 
+ 
+}
   }
