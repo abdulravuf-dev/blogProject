@@ -1,7 +1,4 @@
-
- //fetch('https://gnews.io/api/v4/search?q=climat&country=fr&language=fr&token=4ba691ab1fcd5a75cbb4e787a05ca325') 
  
- //fetch('https://gnews.io/api/v4/search?q=jeux&country=fr&language=fr&token=8bd5580934170ab56a0718c2d7eed09a') 
 
   fetch('https://gnews.io/api/v4/top-headlines?q=atmosphère climat&country=fr&length=15&language=fr&token=5c20e1113984690e47d0c77c02227ca4') 
    
