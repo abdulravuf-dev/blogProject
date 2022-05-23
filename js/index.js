@@ -6,7 +6,7 @@
  
  
  
- fetch('https://gnews.io/api/v4/top-headlines?q=politique&country=fr&language=fr&token=8bd5580934170ab56a0718c2d7eed09a') 
+ fetch('https://gnews.io/api/v4/top-headlines?q=politique&country=fr&language=fr&token=c2b9b2c9c0d7d431d1b0723515c24e55  ') 
 
  
  
@@ -66,7 +66,7 @@ let anchors4 = document.getElementById('anchors4')
  
  
  
- fetch('https://gnews.io/api/v4/top-headlines?q=politique&country=fr&language=fr&token=8bd5580934170ab56a0718c2d7eed09a') 
+ fetch('https://gnews.io/api/v4/top-headlines?q=politique&country=fr&language=fr&token=c2b9b2c9c0d7d431d1b0723515c24e55  ') 
 
    
   .then(function (response) {
@@ -124,7 +124,7 @@ let anchors4 = document.getElementById('anchors4')
 
  
  
-fetch('https://gnews.io/api/v4/top-headlines?&language=fr&q=internationale&token=8bd5580934170ab56a0718c2d7eed09a') 
+fetch('https://gnews.io/api/v4/top-headlines?&language=fr&q=internationale&token=c2b9b2c9c0d7d431d1b0723515c24e55  ') 
  
 .then(function (response) {
   return response.json();
