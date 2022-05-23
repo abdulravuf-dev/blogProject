@@ -126,7 +126,7 @@ let anchors4 = document.getElementById('anchors4')
  
 
  
-  fetch('https://gnews.io/api/v4/top-headlines?&language=fr&q=internationale&token=5c20e1113984690e47d0c77c02227ca4') 
+  //fetch('https://gnews.io/api/v4/top-headlines?&language=fr&q=internationale&token=5c20e1113984690e47d0c77c02227ca4') 
  
 fetch('https://gnews.io/api/v4/top-headlines?&language=fr&q=internationale&token=1c2aa79c3174675bd93eb73bc231709b') 
  
