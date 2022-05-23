@@ -64,48 +64,61 @@ color: rgb(29, 28, 28);
     }  
     
 
- @media (max-width: 768px) {
- 
-    .InterArticleChild
-    {
-        gap:20px;
-        max-width: 100%;
-        flex-direction: column;
- 
- 
-        
-       
-    }  
     
-  
-    .InterArticle
-    {
-      
-        display: flex;
-        flex-direction: column;
-       
-     
-    }  
-
-    .InterImage  
-    { 
-        height: 400px;
-        width: 739px;
-     max-width: 100%;
-
-    }
-
-
-    .InterPara,.InterAnchor
-    { 
-        height: auto;
-        width: 739px;
-     max-width: 100%;
-     
-        }
+  @media (max-width: 1068px) {
 
 
 
- 
+    .InterArticle{
+      gap: 10px;
+      display: flex;
+      flex-direction: column;
+      align-content: center;
+      justify-content: center;
+      padding: 14px;
+      align-items: center;
+  }
+  .InterArticleChild
+{
+  width: 318px;
+  max-width: 100%;
 }
  
+
+
+    }
+ @media (max-width: 1068px) {
+
+
+
+    .InterArticle{
+      gap: 10px;
+      display: flex;
+      flex-direction: column;
+      align-content: center;
+      justify-content: center;
+      padding: 14px;
+      align-items: center;
+  }
+  .InterArticleChild
+{
+  width: 318px;
+  max-width: 100%;
+}
+ 
+
+
+    } 
+
+    @media (max-width: 1068px) {
+
+
+*{
+
+padding: 0;
+
+margin: 0;
+
+}
+
+    }

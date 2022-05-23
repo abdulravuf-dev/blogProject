@@ -58,3 +58,27 @@ color: rgb(29, 28, 28);
         align-content: center;
         justify-content: center;
     }
+
+    
+  @media (max-width: 1068px) {
+
+
+
+    .InterArticle{
+      gap: 10px;
+      display: flex;
+      flex-direction: column;
+      align-content: center;
+      justify-content: center;
+      padding: 14px;
+      align-items: center;
+  }
+  .InterArticleChild
+{
+  width: 318px;
+  max-width: 100%;
+}
+ 
+
+
+    }

@@ -2,6 +2,7 @@
 
   @media (max-width: 1120px){
   
+ 
     ul > li {
       list-style: none;
     }
@@ -21,7 +22,7 @@ padding:20px;
   }   
 
 
-
+/* 
 
   .mobile
   {
@@ -29,21 +30,11 @@ padding:20px;
     margin: 54px 468px 0px 0px;
 
     padding-left: 37vw;
-  }
+  } */
   .section3
   {
     
-  /* display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-
- 
- height: auto; 
-    margin: auto;
-   gap:20px;
-   padding: 20px;
-justify-content: flex-start;
-/* width: 720px;   */
+  
 display: flex;
 flex-direction: row;
 flex-wrap: nowrap;
@@ -54,12 +45,12 @@ padding: 44px;
 justify-content: center;
 /* width: 720px; */
 align-content: center;
+align-items: center;
 width: 20vh;
+padding-left: 250px;
   margin: auto;
 } 
-    .section3 div {
-      
-      }
+    
  
 
     

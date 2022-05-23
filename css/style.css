@@ -6,8 +6,11 @@
 body{ 
   
   margin:0 auto; }
-
-  html, body { overflow-x: scroll; }
+/* 
+  html, body {
+ overflow-x: scroll;   */
+/*   
+  }   */
 *{
   font-family: Arial, Helvetica, sans-serif;
   margin:0;
@@ -15,26 +18,59 @@ body{
   box-sizing: border-box  ;
 
 }
+*
 
-
-/* .menu{
-
-  position: none;
-} */
  
+.container
+
+{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+
+
+  
+}
+.responsive-iframe
+{
+width: 1200px;
+height: 600px;
+display: flex;
+justify-content: center;
+align-content: center;
+align-items: center;
+
+}
+.section3 a {
+
+
+text-decoration: none;
+}
+
+  /* .menu{
+
+  position: fixed;
+}  
+  */.mobile
+  /* {
+
+    margin:54px 347px 0px 0px ;
+
+  } */
   .IndexArticle
 {
   display: flex;
   justify-content: center;
   align-content: center;
   
-  margin: 54px 235px 0px 11px;
- 
+  /* margin: 54px 235px 0px 11px; */
+    margin:54px 347px 0px 0px ;
+
  max-width: 100%
  ;
 
 }
- 
 
 .responsive-iframe {
   max-width: 100%;
@@ -106,6 +142,11 @@ z-index: 11;
   align-content: center;
   background-color: var(--primarycolor);
   padding: 10px;
+  /* position: fixed;
+
+  width: 100%;
+  height: auto; */
+  /* z-index: 4;   */
 }
  
 .login
@@ -385,12 +426,18 @@ font-size: 18px;
   color: var(--primarycolor);
 font-weight: 400;
  font-size: 16px;
-    width: 200px;
+    width: 100px;
     height: 80px;
     
     }
 
-
+    .Section2 h3
+    {
+      width: 100px;
+      height: 80px;
+    
+    }
+    
 
     
 
@@ -470,3 +517,4 @@ gap: 82px;
       margin-top: 26px;
   }
     
+   

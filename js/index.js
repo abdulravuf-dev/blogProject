@@ -1,19 +1,27 @@
- 
 
-//change unlock main dic cxkzndkln
+
+
+
  
- fetch('https://gnews.io/api/v4/top-headlines?q=politique&country=fr&language=fr&token=c7e7ff9e5309678ffee247a96531a76d') 
+// //change unlock main dic cxkzndkln
  
- //fetch('https://gnews.io/api/v4/search?q=nouvelles&country=fr&language=fr&token=5c20e1113984690e47d0c77c02227ca4') 
+ fetch('https://gnews.io/api/v4/top-headlines?q=politique&country=fr&language=fr&token=5c20e1113984690e47d0c77c02227ca4') 
+
  
  
 .then(function (response) {
   return response.json();
   
 })
+
+
+// console.log("working " + response)
 .then(function (data) {
 
-console.log(data);
+console.log( "working"+data);
+ 
+
+
 
   let img1 = document.querySelector('.img1')
 // console.log(img1)
@@ -55,11 +63,10 @@ let anchors4 = document.getElementById('anchors4')
 
 
 
-// change api here
- fetch('https://gnews.io/api/v4/top-headlines?q=politique&country=fr&language=fr&token=c7e7ff9e5309678ffee247a96531a76d') 
+// // change api here
+ fetch('https://gnews.io/api/v4/top-headlines?q=politique&country=fr&language=fr&token=5c20e1113984690e47d0c77c02227ca4') 
 
-  
-  
+   
   .then(function (response) {
     return response.json();
   })
@@ -68,7 +75,33 @@ let anchors4 = document.getElementById('anchors4')
   console.log(data);
  
   
- 
+  let premiere1 = document.getElementById('premiere1')
+  let premiere2 = document.getElementById('premiere2')
+  let premiere3 = document.getElementById('premiere3')
+  let premiere4 = document.getElementById('premiere4')
+
+  premiere1.href =` ${data.articles[0].url}`
+
+  premiere2.href =` ${data.articles[1].url}`
+  premiere3.href =` ${data.articles[2].url}`
+  premiere4.href =` ${data.articles[3].url}`
+
+
+  let linkHeader1 = document.getElementById('linkHeader1')
+  let linkHeader2= document.getElementById('linkHeader2')
+  let linkHeader3= document.getElementById('linkHeader3')
+  let linkHeader4= document.getElementById('linkHeader4')
+
+
+  linkHeader1.href =` ${data.articles[0].url}`
+
+  linkHeader2.href =` ${data.articles[1].url}`
+  linkHeader3.href =` ${data.articles[2].url}`
+  linkHeader4.href =` ${data.articles[3].url}`
+
+
+
+
   let IndexSec3H1 = document.getElementsByClassName('IndexSec3H1');
 
  let imags = document.getElementsByClassName('IndexImages');
@@ -79,33 +112,52 @@ let anchors4 = document.getElementById('anchors4')
 
   imags[i].src=` ${data.articles[i].image}`;
 
-   IndexSec3H1[i].innerHTML=` ${data.articles[i].title}`;
+
+   IndexSec3H1[i].innerHTML=` ${data.articles[i].title}   `;
   //  IndexSec3H1[1].innerHTML=` ${data.articles[i].title}`;
 } 
 
 })
-
-
  
 
+ 
+ 
 // change api here
-fetch('https://gnews.io/api/v4/top-headlines?&language=fr&q=internationale&token=c7e7ff9e5309678ffee247a96531a76d') 
+  fetch('https://gnews.io/api/v4/top-headlines?&language=fr&q=internationale&token=5c20e1113984690e47d0c77c02227ca4') 
 .then(function (response) {
   return response.json();
 })
 .then(function (data) {
 
 console.log(data);
-
-
-
  
  let Index3H1 = document.getElementsByClassName('Index3H1');
 
 let imageIndexSection3 = document.getElementsByClassName('imageIndexSection3');
+ 
+let Section3same1 = document.getElementById('Section3same1')
+let Section3same2 = document.getElementById('Section3same2')
+let Section3same3 = document.getElementById('Section3same3')
+let Section3same4 = document.getElementById('Section3same4')
+
+Section3same1.href =` ${data.articles[0].url}`
+
+Section3same2.href =` ${data.articles[1].url}`
+Section3same3.href =` ${data.articles[2].url}`
+Section3same4.href =` ${data.articles[3].url}`
 
 
+let Section3link1 = document.getElementById('Section3link1')
+let Section3link2= document.getElementById('Section3link2')
+let Section3link3= document.getElementById('Section3link3')
+let Section3link4= document.getElementById('Section3link4')
 
+
+Section3link1.href =` ${data.articles[0].url}`
+
+Section3link2.href =` ${data.articles[1].url}`
+Section3link3.href =` ${data.articles[2].url}`
+Section3link4.href =` ${data.articles[3].url}`
 
    for(let i=0; i<=4; i++)
    {
@@ -118,9 +170,66 @@ let imageIndexSection3 = document.getElementsByClassName('imageIndexSection3');
 
 })
 
+// 5c20e1113984690e47d0c77c02227ca4
 
-  
+// c7e7ff9e5309678ffee247a96531a76d
+// 8bd5580934170ab56a0718c2d7eed09a
+// change api here
+  fetch('https://gnews.io/api/v4/search?q=sport&country=fr&language=fr&token=5c20e1113984690e47d0c77c02227ca4') 
+.then(function (response) {
+  return response.json();
+})
+.then(function (data) {
+
+console.log(data);
+let Section2same1 = document.getElementById('Section2same1')
+let Section2same2 = document.getElementById('Section2same2')
+let Section2same3 = document.getElementById('Section2same3')
+let Section2same4 = document.getElementById('Section2same4')
+
+Section2same1.href =` ${data.articles[0].url}` 
+Section2same2.href =` ${data.articles[1].url}`
+Section2same3.href =` ${data.articles[2].url}`
+Section2same4.href =` ${data.articles[3].url}`
  
+  let Section2IdLink = document.getElementsByClassName('Section2IdLink');
+ 
+let Section2HeadingLink1 = document.getElementById('Section3link1')
+let Section2HeadingLink2= document.getElementById('Section3link2')
+let Section2HeadingLink3= document.getElementById('Section3link3')
+let Section2HeadingLink4= document.getElementById('Section3link4')
+
+
+Section2HeadingLink1.href =` ${data.articles[0].url}` 
+
+Section2HeadingLink2.href =` ${data.articles[1].url}`
+Section2HeadingLink3.href=` ${data.articles[2].url}`
+Section2HeadingLink4.href =` ${data.articles[3].url}`
+ 
+let sectImage1 = document.getElementsByClassName('sectImage1');
+   for(let i=0; i<=4; i++)
+   {
+   
+
+    sectImage1[i].src =` ${data.articles[i].image}`
+ 
+
+    Section2IdLink[i].innerHTML=` ${data.articles[i].title}`
+} 
+
+
+
+
+})
+
+
+
+
+
+
+
+ 
+  
 
   let  x = document.querySelector(".fa-bars");
   let  main = document.querySelector("main");

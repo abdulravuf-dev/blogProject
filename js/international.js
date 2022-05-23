@@ -2,9 +2,10 @@
  
 
  //fetch('https://gnews.io/api/v4/top-headlines?&language=fr&q=internationale&token=5c20e1113984690e47d0c77c02227ca4') 
- 
+  fetch('https://gnews.io/api/v4/search?q=actualite&country=fr&language=fr&token=5c20e1113984690e47d0c77c02227ca4') 
 
- fetch('https://gnews.io/api/v4/top-headlines?q=politique&language=fr&token=c7e7ff9e5309678ffee247a96531a76d') 
+
+ //fetch('https://gnews.io/api/v4/top-headlines?q=actualite&language=fr&token=d5f206a4d517392d6b6caece38615886') 
 .then(function (response) {
   return response.json();
   
@@ -18,15 +19,7 @@ let imageApi = document.querySelector('#imageApi')
 
 for(let i=0; i<=10; i++)
 { 
-    if( data.articles[i].image === null)
-      {
-        imageApi.innerHTML.remove();
-      
     
-    }
-    else 
-    {
-
     imageApi.innerHTML +=  `
 <div class="InterArticle" id="InterArticleId">     <a href=" ${data.articles[i].url}"><img class="InterImage" src= ${data.articles[i].image} >   </a>
  <div class="InterArticleChild">
@@ -37,184 +30,54 @@ for(let i=0; i<=10; i++)
 </div>`  
 }
 
-}
-
+ 
 })
 
 
-let header1 = document.getElementById('InterArticleId')
+// let header1 = document.getElementById('InterArticleId')
 
-header1[0].innerHTML =`<h1 class="InterH1">INTERNATIONAL</h1> `
+// header1[0].innerHTML =`<h1 class="InterH1">INTERNATIONAL</h1> `
 
 
-console.log(header1)
+// console.log(header1)
 
 
 
  
-//     // https://api.thenewsapi.com/v1/news/top?api_token=RbIqcYWzhGh1RtUXnM0AKcmgFlRKiB7PmZxvH5UW&locale=us&limit=3
+let  x = document.querySelector(".fa-bars");
+let  main = document.querySelector("main");
+
+let  x2 = document.querySelector(".list");
+
+let login = document.querySelector(".login");
+let logo = document.querySelector("#logo");
+x.addEventListener("click", myfunction);
+// x.addEventListener("click", myfunction2);
+
+function myfunction(){
+  if (x2.style.display === "block") {
+      x2.style.display = "none";
+    } else {
+       x2.style.display = "block";
+      }
+
+
+}
+
+main.addEventListener("click", myfunction3);
+
+
+function myfunction3(){
+
+      x2.style.display = "none";
+  
+
+
+}
  
-//       fetch("https://api.thenewsapi.com/v1/news/top-headlines?locale=fr&language=fr&api_token=RbIqcYWzhGh1RtUXnM0AKcmgFlRKiB7PmZxvH5UW")
-//   .then(function (response) {
-//     return response.json();
-    
-// })
-// .then(function (data) {
-
-//   console.log(data);
-    
-// let imageApi = document.querySelector('#imageApi')
-
-//     for(let i=0; i<=20; i++)
-//     {
-
-//   if( data.data[i].urlToImage === null)
-//   {
-// console.log("erroer ")
-//  i = i + 1;
-
-// }
-
-// else
-// {
-//   imageApi.innerHTML +=  `
-//   <div class="InterDisplay"><img class ="InterImage" src= ${data.data[i].image_url} >     
-//    <div class="InterDisplay2">
-//   <p id="InterPara">  ${data.data[i].title} </p>  
-//   <p id="InterPara">  ${data.data[i].description} </p> 
-//   <a href=" ${data.data[i].url}"><button>Visit Page Now</button></a>
-//   </div>
-//   </div>`  
-// }  
-
-//   } 
-
-
-
-//   });
 
 
 
 
 
-
-
-
-
-    
-
-
-//********************************************* */ G news *****************************************
-
-      // fetch("https://newsapi.org/v2/top-headlines?country=fr&category=business&apiKey=ad236ef1c81e4cc299a5427352fa90c2")
-
-
-// fetch('https://gnews.io/api/v4/top-headlines?q=main&country=fr&language=fr&inurl=lamonde.com&token=5c20e1113984690e47d0c77c02227ca4')
  
-//     .then(function (response) {
-//         return response.json();
-        
-//     })
-//     .then(function (data) {
-
-//       console.log(data);
-
-//         console.log(data.articles[1].content);
-    
-//         let imageApi = document.querySelector('#imageApi') 
-
-//         for(let i=1; i<=6; i++)
-//         {
-//       imageApi.innerHTML +=  `
-      
-//       <div class="InterDisplay"><img class ="InterImage" src= ${data.articles[i].image} >     
-//        <div class="InterDisplay2">
-//       <p id="InterPara">  ${data.articles[i].title} </p>  
-//       <p id="InterPara">  ${data.articles[i].description} </p> 
-//       <a href=" ${data.articles[i].url}"><button>Visit Page Now</button></a>
-//       </div>
-//       </div>`  
-       
-//       } 
-//     });
-
-    // fetch('https://gnews.io/api/v4/top-headlines?q=main&country=us&language=fr&token=c2b9b2c9c0d7d431d1b0723515c24e55')
- 
-    // .then(function (response) {
-    //     return response.json();
-        
-    // })
-    // .then(function (data) {
-
-    //   console.log(data);
-    //     console.log(data.articles[1].content);
-    // let imageApi = document.querySelector('#imageApi')
-
-    //     for(let i=0; i<=6; i++)
-    //     {
-    //   imageApi.innerHTML +=  `
-      
-    //   <div class="InterDisplay"><img class ="InterImage" src= ${data.articles[i].image} >     
-    //    <div class="InterDisplay2">
-    //   <p id="InterPara">  ${data.articles[i].title} </p>  
-    //   <p id="InterPara">  ${data.articles[i].description} </p> 
-    //   <a href=" ${data.articles[i].url}"><button>Visit Page Now</button></a>
-    //   </div>
-    //   </div>`  
-       
-    //   } 
-    // });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  //  fetch('https://gnews.io/api/v4/top-headlines?&token=c2b9b2c9c0d7d431d1b0723515c24e55')
-  //   .then(function (response) {
-
-  //       return response.json();
-        
-  //   })
-  //   .then(function(data) {
-
-  //     console.log(data);
-      
-       
-  //       for(let i=0; i<9; i++)
-  //       {
-  //     imageApi2.innerHTML +=  `<img src= ${data.articles[i].image}   >     
-  //     <p> ${data.articles[i].description} </p>  `  ;
-      
-       
-  //   }
-  //  });
-
-    // https://gnewsapi.net/api/search?q=covid-19&country=us&language=en&limit=5&api_token=[YourApiTokenHere]
-
-
-
-
-
-
-//     // apis 
-// fake email 
-    //   c2b9b2c9c0d7d431d1b0723515c24e55  
-
-
-
-
-
