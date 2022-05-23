@@ -3,13 +3,13 @@
 
 
  
-<<<<<<< HEAD
-// //change unlock main dic cxkzndkln
-=======
- fetch('https://gnews.io/api/v4/top-headlines?q=politique&country=fr&language=fr&token=5c20e1113984690e47d0c77c02227ca4') 
->>>>>>> e58925ffcdec266c38a514ea4d23c667afa656ec
  
- fetch('https://gnews.io/api/v4/top-headlines?q=politique&country=fr&language=fr&token=5c20e1113984690e47d0c77c02227ca4') 
+// //change unlock main dic cxkzndkln
+ 
+ //fetch('https://gnews.io/api/v4/top-headlines?q=politique&country=fr&language=fr&token=1c2aa79c3174675bd93eb73bc231709b') 
+ 
+ 
+ fetch('https://gnews.io/api/v4/top-headlines?q=politique&country=fr&language=fr&token=1c2aa79c3174675bd93eb73bc231709b') 
 
  
  
@@ -66,13 +66,10 @@ let anchors4 = document.getElementById('anchors4')
  
 
 
-
-<<<<<<< HEAD
-// // change api here
-=======
-// change api here
->>>>>>> e58925ffcdec266c38a514ea4d23c667afa656ec
- fetch('https://gnews.io/api/v4/top-headlines?q=politique&country=fr&language=fr&token=5c20e1113984690e47d0c77c02227ca4') 
+ 
+ 
+ 
+ fetch('https://gnews.io/api/v4/top-headlines?q=politique&country=fr&language=fr&token=1c2aa79c3174675bd93eb73bc231709b') 
 
    
   .then(function (response) {
@@ -129,13 +126,10 @@ let anchors4 = document.getElementById('anchors4')
  
 
  
- 
-// change api here
-<<<<<<< HEAD
   fetch('https://gnews.io/api/v4/top-headlines?&language=fr&q=internationale&token=5c20e1113984690e47d0c77c02227ca4') 
-=======
-fetch('https://gnews.io/api/v4/top-headlines?&language=fr&q=internationale&token=5c20e1113984690e47d0c77c02227ca4') 
->>>>>>> e58925ffcdec266c38a514ea4d23c667afa656ec
+ 
+fetch('https://gnews.io/api/v4/top-headlines?&language=fr&q=internationale&token=1c2aa79c3174675bd93eb73bc231709b') 
+ 
 .then(function (response) {
   return response.json();
 })
@@ -181,13 +175,9 @@ Section3link4.href =` ${data.articles[3].url}`
 } 
 
 })
-
-// 5c20e1113984690e47d0c77c02227ca4
-
-// c7e7ff9e5309678ffee247a96531a76d
-// 8bd5580934170ab56a0718c2d7eed09a
+ 
 // change api here
-  fetch('https://gnews.io/api/v4/search?q=sport&country=fr&language=fr&token=5c20e1113984690e47d0c77c02227ca4') 
+  fetch('https://gnews.io/api/v4/search?q=sport&country=fr&language=fr&token=1c2aa79c3174675bd93eb73bc231709b') 
 .then(function (response) {
   return response.json();
 })
