@@ -173,7 +173,7 @@ Section3link4.href =` ${data.articles[3].url}`
 })
  
  
-  fetch('https://gnews.io/api/v4/search?q=sport&country=fr&language=fr&token=fd91775a9ebca89718deb03b603161c1') 
+  fetch('https://gnews.io/api/v4/search?q=sport&country=fr&language=fr&token=fd91775a9ebca89718deb03b603161c1  ') 
 .then(function (response) {
   return response.json();
 })
@@ -219,6 +219,7 @@ let sectImage1 = document.getElementsByClassName('sectImage1');
 
 
 })
+
 
 
 
