@@ -124,7 +124,7 @@ let anchors4 = document.getElementById('anchors4')
 
  
  
-fetch('https://gnews.io/api/v4/top-headlines?&language=fr&q=internationale&token=   ') 
+fetch('https://gnews.io/api/v4/top-headlines?&language=fr&q=internationale&token=fd91775a9ebca89718deb03b603161c1 ') 
  
 .then(function (response) {
   return response.json();
