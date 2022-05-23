@@ -82,11 +82,11 @@ let anchors4 = document.getElementById('anchors4')
   let premiere3 = document.getElementById('premiere3')
   let premiere4 = document.getElementById('premiere4')
 
-  premiere1.href =` ${data.articles[1].url}`
+  premiere1.href =` ${data.articles[5].url}`
 
-  premiere2.href =` ${data.articles[2].url}`
-  premiere3.href =` ${data.articles[3].url}`
-  premiere4.href =` ${data.articles[4].url}`
+  premiere2.href =` ${data.articles[6].url}`
+  premiere3.href =` ${data.articles[7].url}`
+  premiere4.href =` ${data.articles[8].url}`
 
 
   let linkHeader1 = document.getElementById('linkHeader1')
@@ -95,11 +95,11 @@ let anchors4 = document.getElementById('anchors4')
   let linkHeader4= document.getElementById('linkHeader4')
 
 
-  linkHeader1.href =` ${data.articles[1].url}`
+  linkHeader1.href =` ${data.articles[5].url}`
 
-  linkHeader2.href =` ${data.articles[2].url}`
-  linkHeader3.href =` ${data.articles[3].url}`
-  linkHeader4.href =` ${data.articles[4].url}`
+  linkHeader2.href =` ${data.articles[6].url}`
+  linkHeader3.href =` ${data.articles[7].url}`
+  linkHeader4.href =` ${data.articles[8].url}`
 
 
 
