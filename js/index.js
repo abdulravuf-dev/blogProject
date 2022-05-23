@@ -4,9 +4,6 @@
 
  
  
-// //change unlock main dic cxkzndkln
- 
- //fetch('https://gnews.io/api/v4/top-headlines?q=politique&country=fr&language=fr&token=1c2aa79c3174675bd93eb73bc231709b') 
  
  
  fetch('https://gnews.io/api/v4/top-headlines?q=politique&country=fr&language=fr&token=1c2aa79c3174675bd93eb73bc231709b') 
@@ -126,7 +123,6 @@ let anchors4 = document.getElementById('anchors4')
  
 
  
-  //fetch('https://gnews.io/api/v4/top-headlines?&language=fr&q=internationale&token=5c20e1113984690e47d0c77c02227ca4') 
  
 fetch('https://gnews.io/api/v4/top-headlines?&language=fr&q=internationale&token=1c2aa79c3174675bd93eb73bc231709b') 
  
@@ -176,7 +172,7 @@ Section3link4.href =` ${data.articles[3].url}`
 
 })
  
-// change api here
+ 
   fetch('https://gnews.io/api/v4/search?q=sport&country=fr&language=fr&token=1c2aa79c3174675bd93eb73bc231709b') 
 .then(function (response) {
   return response.json();
