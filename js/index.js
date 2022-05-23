@@ -84,9 +84,9 @@ let anchors4 = document.getElementById('anchors4')
 
   premiere1.href =` ${data.articles[5].url}`
 
-  premiere2.href =` ${data.articles[1].url}`
-  premiere3.href =` ${data.articles[2].url}`
-  premiere4.href =` ${data.articles[3].url}`
+  premiere2.href =` ${data.articles[4].url}`
+  premiere3.href =` ${data.articles[3].url}`
+  premiere4.href =` ${data.articles[7].url}`
 
 
   let linkHeader1 = document.getElementById('linkHeader1')
@@ -97,9 +97,9 @@ let anchors4 = document.getElementById('anchors4')
 
   linkHeader1.href =` ${data.articles[5].url}`
 
-  linkHeader2.href =` ${data.articles[1].url}`
-  linkHeader3.href =` ${data.articles[2].url}`
-  linkHeader4.href =` ${data.articles[3].url}`
+  linkHeader2.href =` ${data.articles[4].url}`
+  linkHeader3.href =` ${data.articles[3].url}`
+  linkHeader4.href =` ${data.articles[7].url}`
 
 
 
