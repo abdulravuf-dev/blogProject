@@ -66,60 +66,60 @@ let anchors4 = document.getElementById('anchors4')
  
  
  
- fetch('https://gnews.io/api/v4/top-headlines?q=politique&country=fr&language=fr&token=fd91775a9ebca89718deb03b603161c1  ') 
+//  fetch('https://gnews.io/api/v4/top-headlines?q=politique&country=fr&language=fr&token=fd91775a9ebca89718deb03b603161c1  ') 
 
    
-  .then(function (response) {
-    return response.json();
-  })
-  .then(function (data) {
+//   .then(function (response) {
+//     return response.json();
+//   })
+//   .then(function (data) {
 
-  console.log(data);
+//   console.log(data);
  
   
-  let premiere1 = document.getElementById('premiere1')
-  let premiere2 = document.getElementById('premiere2')
-  let premiere3 = document.getElementById('premiere3')
-  let premiere4 = document.getElementById('premiere4')
+//   let premiere1 = document.getElementById('premiere1')
+//   let premiere2 = document.getElementById('premiere2')
+//   let premiere3 = document.getElementById('premiere3')
+//   let premiere4 = document.getElementById('premiere4')
 
-  premiere1.href =` ${data.articles[5].url}`
+//   premiere1.href =` ${data.articles[5].url}`
 
-  premiere2.href =` ${data.articles[6].url}`
-  premiere3.href =` ${data.articles[7].url}`
-  premiere4.href =` ${data.articles[8].url}`
-
-
-  let linkHeader1 = document.getElementById('linkHeader1')
-  let linkHeader2= document.getElementById('linkHeader2')
-  let linkHeader3= document.getElementById('linkHeader3')
-  let linkHeader4= document.getElementById('linkHeader4')
+//   premiere2.href =` ${data.articles[6].url}`
+//   premiere3.href =` ${data.articles[7].url}`
+//   premiere4.href =` ${data.articles[8].url}`
 
 
-  linkHeader1.href =` ${data.articles[5].url}`
-
-  linkHeader2.href =` ${data.articles[6].url}`
-  linkHeader3.href =` ${data.articles[7].url}`
-  linkHeader4.href =` ${data.articles[8].url}`
-
+//   let linkHeader1 = document.getElementById('linkHeader1')
+//   let linkHeader2= document.getElementById('linkHeader2')
+//   let linkHeader3= document.getElementById('linkHeader3')
+//   let linkHeader4= document.getElementById('linkHeader4')
 
 
+//   linkHeader1.href =` ${data.articles[5].url}`
 
-  let IndexSec3H1 = document.getElementsByClassName('IndexSec3H1');
+//   linkHeader2.href =` ${data.articles[6].url}`
+//   linkHeader3.href =` ${data.articles[7].url}`
+//   linkHeader4.href =` ${data.articles[8].url}`
 
- let imags = document.getElementsByClassName('IndexImages');
+
+
+
+//   let IndexSec3H1 = document.getElementsByClassName('IndexSec3H1');
+
+//  let imags = document.getElementsByClassName('IndexImages');
   
-     for(let i=0; i<=4; i++)
-     {
+//      for(let i=0; i<=4; i++)
+//      {
      
 
-  imags[i].src=` ${data.articles[i].image}`;
+//   imags[i].src=` ${data.articles[i].image}`;
 
 
-   IndexSec3H1[i].innerHTML=` ${data.articles[i].title}   `;
-  //  IndexSec3H1[1].innerHTML=` ${data.articles[i].title}`;
-} 
+//    IndexSec3H1[i].innerHTML=` ${data.articles[i].title}   `;
+//   //  IndexSec3H1[1].innerHTML=` ${data.articles[i].title}`;
+// } 
 
-})
+// })
  
 
  
