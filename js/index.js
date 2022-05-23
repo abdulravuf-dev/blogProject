@@ -6,7 +6,7 @@
  
  
  
- fetch('https://gnews.io/api/v4/top-headlines?q=politique&country=fr&language=fr&token=c7e7ff9e5309678ffee247a96531a76d') 
+ fetch('https://gnews.io/api/v4/top-headlines?q=politique&country=fr&language=fr&token=8bd5580934170ab56a0718c2d7eed09a') 
 
  
  
@@ -66,7 +66,7 @@ let anchors4 = document.getElementById('anchors4')
  
  
  
- fetch('https://gnews.io/api/v4/top-headlines?q=politique&country=fr&language=fr&token=c7e7ff9e5309678ffee247a96531a76d') 
+ fetch('https://gnews.io/api/v4/top-headlines?q=politique&country=fr&language=fr&token=8bd5580934170ab56a0718c2d7eed09a') 
 
    
   .then(function (response) {
@@ -124,7 +124,7 @@ let anchors4 = document.getElementById('anchors4')
 
  
  
-fetch('https://gnews.io/api/v4/top-headlines?&language=fr&q=internationale&token=c7e7ff9e5309678ffee247a96531a76d') 
+fetch('https://gnews.io/api/v4/top-headlines?&language=fr&q=internationale&token=8bd5580934170ab56a0718c2d7eed09a') 
  
 .then(function (response) {
   return response.json();
@@ -173,7 +173,7 @@ Section3link4.href =` ${data.articles[3].url}`
 })
  
  
-  fetch('https://gnews.io/api/v4/search?q=sport&country=fr&language=fr&token=c7e7ff9e5309678ffee247a96531a76d') 
+  fetch('https://gnews.io/api/v4/search?q=sport&country=fr&language=fr&token=8bd5580934170ab56a0718c2d7eed09a') 
 .then(function (response) {
   return response.json();
 })
