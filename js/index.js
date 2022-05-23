@@ -3,7 +3,11 @@
 
 
  
+<<<<<<< HEAD
 // //change unlock main dic cxkzndkln
+=======
+ fetch('https://gnews.io/api/v4/top-headlines?q=politique&country=fr&language=fr&token=5c20e1113984690e47d0c77c02227ca4') 
+>>>>>>> e58925ffcdec266c38a514ea4d23c667afa656ec
  
  fetch('https://gnews.io/api/v4/top-headlines?q=politique&country=fr&language=fr&token=5c20e1113984690e47d0c77c02227ca4') 
 
@@ -63,7 +67,11 @@ let anchors4 = document.getElementById('anchors4')
 
 
 
+<<<<<<< HEAD
 // // change api here
+=======
+// change api here
+>>>>>>> e58925ffcdec266c38a514ea4d23c667afa656ec
  fetch('https://gnews.io/api/v4/top-headlines?q=politique&country=fr&language=fr&token=5c20e1113984690e47d0c77c02227ca4') 
 
    
@@ -123,7 +131,11 @@ let anchors4 = document.getElementById('anchors4')
  
  
 // change api here
+<<<<<<< HEAD
   fetch('https://gnews.io/api/v4/top-headlines?&language=fr&q=internationale&token=5c20e1113984690e47d0c77c02227ca4') 
+=======
+fetch('https://gnews.io/api/v4/top-headlines?&language=fr&q=internationale&token=5c20e1113984690e47d0c77c02227ca4') 
+>>>>>>> e58925ffcdec266c38a514ea4d23c667afa656ec
 .then(function (response) {
   return response.json();
 })
